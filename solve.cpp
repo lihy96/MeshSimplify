@@ -30,10 +30,7 @@ Vector4 Solve::getAns(){
 				v.v[k] -= v.v[i] * rate;
 			}
 		}
-	}
-
-	//debug();
-	
+	}	
 	Vector4 X;
 	for (int i = 0; i < 4; i++) {
 		int j = 0;

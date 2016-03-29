@@ -1,3 +1,7 @@
+/**********************************************
+*by 李昊阳
+*基于edge-collapse算法实现的网格简化
+**********************************************/
 #include "meshSimplify.h"
 #include "config.h"
 #include "matrix.h"
@@ -23,22 +27,7 @@ int main(int argc,char* argv[]){
 		meshSimplify->output();//输出
 
 		clock_t finish = clock();//计时结束，计算简化时间
-		cout << "# time use: " << (double)(finish - start) / CLOCKS_PER_SEC << endl;
+		cout << "# time use: " << (double)(finish - start) / CLOCKS_PER_SEC  << " s"<< endl;
 	}
 	return 0;
 }
-
-
-/*注意：
-0.建堆过程的break很容易出错！！！！
-1.vertexgroup中的结点是从【1，cnt】
-2.edgeheap中的边是【1，cnt】
-3.为什么缩点的时候有时选中点，为什么有时解方程返回0,0,0，-1
-*/
-
-
-/*
-
-目前进度，该写meshsimplify类中start函数了
-
-*/

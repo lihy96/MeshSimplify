@@ -4,7 +4,7 @@
 #include "myVec3d.h"
 #include <vector>
 #include <set>
-//顶点类基本已经实现 2016/3/27
+//顶点类
 class Vertex
 {
 public:

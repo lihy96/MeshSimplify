@@ -2,7 +2,7 @@
 #define MYVEC3D_H
 #include "config.h"
 #include <cmath>
-//此类基本已经实现 2016/03/27
+//三维向量类
 class MyVec3d
 {
 	

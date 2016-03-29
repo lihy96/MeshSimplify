@@ -1,6 +1,6 @@
 objects = meshSimplify.o myVec3d.o vector4.o matrix.o vertex.o vertexGroup.o edge.o edgeHeap.o config.o solve.o 
 
-all: main.exe clean test005 test001 test03
+all: main.exe clean
 
 main.exe: main.cpp $(objects)
 	g++ main.cpp $(objects) -o main.exe -O3

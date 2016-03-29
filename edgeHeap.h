@@ -9,7 +9,6 @@
 using namespace std;
 class EdgeHeap
 {
-
 public:
 	EdgeHeap(void);
 	~EdgeHeap(void);
@@ -18,13 +17,12 @@ public:
 			return X.deltaV > Y.deltaV;
 		}
 	};
-	std::priority_queue<Edge,std::vector<Edge>,cmp> pq;
-	map<pair<int, int>, int> mapEdgeToID;
-	bool isDeleted[Config::MAX_EDGE_NUM+1];
-	int cntEdge;
+	std::priority_queue<Edge,std::vector<Edge>,cmp> pq;//用于保存边，按照误差从小到大排序
+	map<pair<int, int>, int> mapEdgeToID;//建立顶点到边的映射关系
+	bool isDeleted[Config::MAX_EDGE_NUM+1];//标记哪些边被删除
+	int cntEdge;//边数量
 	void addEdge(Edge&);//加边
-	void delEdge(Edge);
-
+	void delEdge(Edge);//删边
 	Edge getMinDelta();//删除误差最小的边
 };
 #endif

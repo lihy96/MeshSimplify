@@ -7,7 +7,7 @@
 #include <fstream>
 #include <sstream>
 using namespace std;
-//此类基本已实现 2016/03/27
+//所有顶点
 class VertexGroup
 {
 public:

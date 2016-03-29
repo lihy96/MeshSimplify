@@ -11,7 +11,6 @@ Matrix::Matrix(void)
 
 }
 
-
 Matrix::~Matrix(void)
 {
 }

@@ -8,8 +8,6 @@ Edge::Edge(int _u,int _v)
 	v2 = _v;
 	deltaV = Config::INF * 1.0;
 }
-
-
 Edge::~Edge(void)
 {
 }

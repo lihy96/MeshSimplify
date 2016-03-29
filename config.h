@@ -1,6 +1,6 @@
 #ifndef CONFIG_H
 #define CONFIG_H
-//配置类，用于存放一些常亮
+//配置类，用于存放一些常量
 class Config
 {
 public:

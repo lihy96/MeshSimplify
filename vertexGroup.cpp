@@ -6,10 +6,6 @@ VertexGroup::VertexGroup(void)
 	for(int i = 0;i < Config::MAX_POINT_NUM;i++)
 		isDeleted[i] = false;
 }
-
-
-
-
 VertexGroup::~VertexGroup(void)
 {
 }
@@ -45,10 +41,3 @@ int VertexGroup::getCommonVertexNum(int u,int v){
 	}
 	return cnt;
 }
-
-
-
-
-
-
-

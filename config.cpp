@@ -6,8 +6,6 @@ const double Config::INF = 123456789;
 Config::Config(void)
 {
 }
-
-
 Config::~Config(void)
 {
 }

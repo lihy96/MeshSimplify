@@ -199,23 +199,11 @@ MyVec3d MeshSimplify::calVertexPos(Edge& e,Matrix m){
 	Vector4 Y(0,0,0,1);
 	Solve* solve = new Solve(m,Y);
 	Vector4 ans = solve->getAns();
-	if(ans.v[3] > 0)
+	if(ans.v[3] > Config::EPS)
 		return MyVec3d(ans.v[0],ans.v[1],ans.v[2]);
 	else
 		return mid;
 }
-
-/*
-void MeshSimplify::addEdgeToHeap(){
-	for(int i = 1;i <= vGroup->cntVertex;i++){//遍历所有结点
-		for(set<int>::iterator it = vGroup->group[i].connectVertexes.begin();
-			it != vGroup->group[i].connectVertexes.end();it++){//遍历所有邻接点
-
-		}
-
-	}
-
-}*/
 
 
 

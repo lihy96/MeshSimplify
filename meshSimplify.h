@@ -5,6 +5,7 @@
 #include "matrix.h"
 #include "vector4.h"
 #include "solve.h"
+#include "config.h"
 #include <cstdlib>
 #include <cstdio>
 #include <string>
