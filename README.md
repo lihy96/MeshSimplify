@@ -5,7 +5,7 @@ This repository holds mesh simplification, a project based on edge-collapse algo
  
 ## Description
 
--- This is one the homework of Computer Graphics, a course in spring semester, 2016.
+-- This is the homework of Computer Graphics, a course in spring semester, 2016.
 
 -- You can download this project to complile by executing "make" command or test it by executing "main.exe [input.obj] [output.obj] [ratio]".
 
