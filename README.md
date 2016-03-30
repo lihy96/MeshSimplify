@@ -9,9 +9,13 @@ This repository holds mesh simplification, a project based on edge-collapse algo
 
 -- You can download this project to complile by executing "make" command or test it by executing "main.exe [input.obj] [output.obj] [ratio]".
 
-## Dragon Model (For example)
+## Dragon Model 
+
+Take "dragon.obj" for example
+
 -Original model (9342 KB)
 ![dragon](https://raw.githubusercontent.com/lihy96/MeshSimplify/master/image/dragon.gif)
+
 
 -Simplication ration = 0.3 (2221 KB)
 ![d03](https://raw.githubusercontent.com/lihy96/MeshSimplify/master/image/d03.gif)
