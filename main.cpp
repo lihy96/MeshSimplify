@@ -1,6 +1,5 @@
 /**********************************************
-*by Àîê»Ñô
-*»ùÓÚedge-collapseËã·¨ÊµÏÖµÄÍø¸ñ¼ò»¯
+*åŸºäºedge-collapseç®—æ³•å®ç°çš„ç½‘æ ¼ç®€åŒ–
 **********************************************/
 #include "meshSimplify.h"
 #include "config.h"
@@ -16,17 +15,17 @@ int main(int argc,char* argv[]){
 		cout << "error input " << endl;
 		return -1;
 	}else{
-		clock_t start = clock();//¼ÆÊ±¿ªÊ¼
+		clock_t start = clock();//è®¡æ—¶å¼€å§‹
 
 		MeshSimplify* meshSimplify = new MeshSimplify();
 		freopen(argv[1],"r",stdin);
 		freopen(argv[2],"w",stdout);
-		meshSimplify->setRatio(atof(argv[3]));//ÉèÖÃ¼ò»¯ÂÊ
-		meshSimplify->input();//¶ÁÈë
-		meshSimplify->start();//¿ªÊ¼¼ò»¯
-		meshSimplify->output();//Êä³ö
+		meshSimplify->setRatio(atof(argv[3]));//è®¾ç½®ç®€åŒ–ç‡
+		meshSimplify->input();//è¯»å…¥
+		meshSimplify->start();//å¼€å§‹ç®€åŒ–
+		meshSimplify->output();//è¾“å‡º
 
-		clock_t finish = clock();//¼ÆÊ±½áÊø£¬¼ÆËã¼ò»¯Ê±¼ä
+		clock_t finish = clock();//è®¡æ—¶ç»“æŸï¼Œè®¡ç®—ç®€åŒ–æ—¶é—´
 		cout << "# time use: " << (double)(finish - start) / CLOCKS_PER_SEC  << " s"<< endl;
 	}
 	return 0;
